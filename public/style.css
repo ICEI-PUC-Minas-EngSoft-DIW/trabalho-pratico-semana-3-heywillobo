@@ -36,19 +36,7 @@ nav a:hover {
 }
 
 .banner {
-  background: url('banner.jpg') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.banner h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.banner {
-  background: url('banner.jpg') center/cover no-repeat;
+  background: url('banner.jpg') center/cover no-repeat, #444; /* fallback */
   color: white;
   text-align: center;
   padding: 4rem 2rem;
@@ -61,6 +49,14 @@ nav a:hover {
 
 main {
   padding: 2rem;
+}
+
+main h2, main p {
+  color: #111;
+}
+
+section {
+  margin-bottom: 2rem;
 }
 
 main h2 {
@@ -86,8 +82,42 @@ main h2 {
   transition: transform 0.2s;
 }
 
+.card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
 .card:hover {
   transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 300px;
+  margin: 1rem auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+input, button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
 }
 
 footer {
@@ -96,4 +126,15 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .banner {
+    padding: 2rem 1rem;
+  }
 }
