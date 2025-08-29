@@ -34,3 +34,15 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+.banner {
+  background: url('banner.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.banner h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
