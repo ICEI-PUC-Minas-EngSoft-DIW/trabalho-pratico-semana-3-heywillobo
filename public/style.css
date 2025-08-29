@@ -89,3 +89,11 @@ main h2 {
 .card:hover {
   transform: scale(1.05);
 }
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
